@@ -1,0 +1,18 @@
+:backends:
+  - yaml
+  #- eyaml
+
+:logger: console
+
+:hierarchy:
+  - role/%{::puppet_role}
+
+:yaml:
+  :datadir: /etc/puppetlabs/code/environment/production/hieradata
+
+:eyaml:
+  :datadir: /etc/puppetlabs/code/environment/production/hieradata
+  :pkcs7_private_key: /etc/puppetlabs/code/keys/private_key.pkcs7.pem
+  :pkcs7_public_key: /etc/puppetlabs/code/keys/public_key.pkcs7.pem
+
+:merge_behavior: deeper

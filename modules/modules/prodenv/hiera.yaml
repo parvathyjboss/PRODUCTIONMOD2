@@ -1,0 +1,10 @@
+:backends:
+	-yaml
+
+:logger: console
+
+:hierarchy:
+	- role/%{::puppet_role}
+:yaml:
+	:datadir: /etc/puppetlabs/code/environments/prodenv/hieradata
+ -
